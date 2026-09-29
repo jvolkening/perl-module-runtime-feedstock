@@ -31,9 +31,7 @@ test:
 about:
   home: http://metacpan.org/pod/Module-Runtime
   license: GPL-1.0-or-later OR Artistic-1.0-Perl
-  license_file:
-    - {{ environ["PREFIX"] }}/lib/perl5/core_perl/pod/perlartistic.pod
-    - {{ environ["PREFIX"] }}/lib/perl5/core_perl/pod/perlgpl.pod
+  license_file: LICENSE
   summary: 'runtime module handling'
 
 extra:
