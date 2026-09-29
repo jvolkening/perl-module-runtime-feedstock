@@ -18,9 +18,10 @@ build:
       - {{ name }} ={{ version }}
 
 requirements:
+  build:
+    - make
   host:
     - perl
-    - perl-module-build
   run:
     - perl
 
