@@ -1,6 +1,6 @@
 {% set name = "perl-module-runtime" %}
-{% set version = "0.016" %}
-{% set sha256 = "68302ec646833547d410be28e09676db75006f4aa58a11f3bdb44ffe99f0f024" %}
+{% set version = "0.018" %}
+{% set sha256 = "0bf77ef68e53721914ff554eada20973596310b4e2cf1401fc958601807de577" %}
 
 package:
   name: {{ name }}
