@@ -4,15 +4,15 @@
 
 package:
   name: {{ name }}
-  version: {{ version }}
+  version: "{{ version }}"
 
 source:
   url: https://cpan.metacpan.org/authors/id/Z/ZE/ZEFRAM/Module-Runtime-{{ version }}.tar.gz
   sha256: {{ sha256 }}
 
 build:
-  skip: true   # [win]
-  number: 1
+  noarch: generic
+  number: 2
   run_exports:
     weak:
       - {{ name }} ={{ version }}
@@ -32,8 +32,8 @@ about:
   home: http://metacpan.org/pod/Module-Runtime
   license: GPL-1.0-or-later OR Artistic-1.0-Perl
   license_file:
-    - {{ environ["PREFIX"] }}/man/man1/perlartistic.1
-    - {{ environ["PREFIX"] }}/man/man1/perlgpl.1
+    - {{ environ["PREFIX"] }}/lib/perl5/core_perl/pod/perlartistic.pod
+    - {{ environ["PREFIX"] }}/lib/perl5/core_perl/pod/perlgpl.pod
   summary: 'runtime module handling'
 
 extra:
